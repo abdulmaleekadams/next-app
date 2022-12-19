@@ -1,6 +1,12 @@
+import Page from "@layouts/pages"
+
 const About = () => {
     return (
-        <div>About me</div>
+        <Page>
+            <section>
+                
+            </section>
+        </Page>
     )
 }
 
