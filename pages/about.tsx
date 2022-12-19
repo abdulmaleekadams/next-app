@@ -44,7 +44,12 @@ const footer = css`
 
 const About = () => {
   return (
-    <Page>
+    <Page
+      meta={{
+        title: 'About',
+        description: 'Black Panther\'s intro',
+      }}
+    >
       <section css={header}>
         <Image
           css={pantherImg}

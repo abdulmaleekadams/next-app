@@ -1,18 +1,17 @@
 import { ReactNode } from 'react'
 import Header from '@components/header'
 import Navigation from '@components/navigation'
-import Head from 'next/head'
+import SEO, {SEOProps} from '@components/seo'
 
 type PageProps = {
+  meta?: SEOProps
   children?: ReactNode
 }
 
-const Page = ({ children }: PageProps ) => {
+const Page = ({ meta, children }: PageProps) => {
   return (
-    <>
-      <Head>
-        <title>All about NextJS</title>
-      </Head>
+      <>
+          <SEO {...meta} />
       <main>
         <Header />
         <Navigation />
