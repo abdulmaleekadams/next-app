@@ -3,7 +3,8 @@
     "baseUrl": "./",
     "paths": {
       "@components/*":["components/*"],
-      "@shared/*":["shared/*"]
+      "@shared/*":["shared/*"],
+      "@layout/*":["layout/*"]
     },
     "target": "es5",
     "lib": [
